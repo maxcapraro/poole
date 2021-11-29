@@ -9,7 +9,7 @@ title: Home
   <li>
     <a href="{{ site.baseurl }}{{ post.url }}">
       {{ post.title }}
-      <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date "%B %Y" }}</time>
+      <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date: "%B %Y" }}</time>
     </a>
   </li>
   {% endfor %}
