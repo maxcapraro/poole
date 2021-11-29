@@ -8,7 +8,7 @@ title:               Poole
 tagline:             The Jekyll Butler
 url:                 http://capraro.net/poole/
 paginate:            1
-baseurl:             ""
+baseurl:             http://capraro.net/poole/
 
 # Assets
 #
