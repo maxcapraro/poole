@@ -9,25 +9,12 @@ title: Home
   <li>
     <a href="{{ site.baseurl }}{{ post.url }}">
       {{ post.title }}
+      <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date "%B %Y" }}</time>
     </a>
   </li>
-
-  <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
   {% endfor %}
 </ul>
 
-<h2>2020</h2>
-<ul class="posts">
-  {% for post in paginator.posts %}
-  <li>
-    <a href="{{ site.baseurl }}{{ post.url }}">
-      {{ post.title }}
-    </a>
-  </li>
-
-  <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
-  {% endfor %}
-</ul>
 
 
 <div class="pagination">
