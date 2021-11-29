@@ -3,19 +3,17 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
+<ul class="posts">
   {% for post in paginator.posts %}
-  <article class="post">
-    <p>
-      <a href="{{ site.baseurl }}{{ post.url }}" style="color: red !important;">
-        {{ post.title }}
-      </a>
-    </p>
+  <li>
+    <a href="{{ site.baseurl }}{{ post.url }}" style="color: red !important;">
+      {{ post.title }}
+    </a>
+  </li>
 
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
-  </article>
+  <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
   {% endfor %}
-</div>
+</ul>
 
 <div class="pagination">
   {% if paginator.next_page %}

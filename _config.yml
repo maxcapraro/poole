@@ -7,7 +7,7 @@ permalink:           pretty
 title:               Poole
 tagline:             The Jekyll Butler
 url:                 http://capraro.net/poole
-paginate:            1
+paginate:            1000
 baseurl:             http://capraro.net/poole
 
 # Assets
