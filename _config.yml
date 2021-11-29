@@ -4,7 +4,7 @@
 permalink:           pretty
 
 # Setup
-title:               Dr. Maximilian Capraro
+title:               Maximilian Capraro
 tagline:             Personal Website & Blog
 url:                 http://capraro.net/poole
 paginate:            1000
@@ -19,7 +19,7 @@ sass:
 
 # About/contact
 author:
-  name:              Dr. Maximilian Capraro
+  name:              Maximilian Capraro
   url:               http://capraro.net
   email:             max@capraro.net
 
