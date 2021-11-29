@@ -9,13 +9,12 @@ title: Home
 </p>
 
 <h2>Articles & Blog Posts</h2>
-<ul>
-  {% for post in paginator.posts %}
-  <li>
-    <a href="{{ site.baseurl }}{{ post.url }}">
-      {{ post.title }}
-      <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date: "%B %Y" }}</time>
-    </a>
-  </li>
-  {% endfor %}
-</ul>
+
+{% for post in paginator.posts %}
+<h3 class="post-title">
+  <a href="{{ site.baseurl }}{{ post.url }}">
+    {{ post.title }}
+    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date: "%B %Y" }}</time>
+  </a>
+</h3>
+{% endfor %}
